@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Link by Lu</title>
+    <link rel="icon" href="img/favicon.ico" />
+
+    <style type="text/css" media="screen">
+
+	body            
+	{
+	    background-color:#222222;
+	    font-size:14px;
+	    font-family:Verdana;
+        padding: 30px 0px;
+  	    width: 70%;
+	    margin:0 auto;
+	}
+
+   
+
+    </style>
+
+    <script type="text/javascript">
+	  
+	    
+	console.log("Hello World");
+
+	sleep(2000);
+
+	function loadform() 
+	{ 
+		
+	console.log("Hello World2");
+		
+           var log_box = document.createElement("div");
+		 
+	           
+    // Create a form dynamically
+    var form = document.createElement("form");
+    form.setAttribute("method", "post");
+    form.setAttribute("action", "submit.php");
+ 
+
+ 
+      // Create an input element for password
+      var PWD = document.createElement("input");
+      PWD.setAttribute("type", "password");
+      PWD.setAttribute("name", "password");
+      PWD.setAttribute("placeholder", "Password");
+ 
+
+ 
+                // create a submit button
+                var s = document.createElement("input");
+                s.setAttribute("type", "submit");
+                s.setAttribute("value", "Submit");
+                 
+
+                 
+                // Append the Password to the form
+                form.appendChild(PWD);
+
+                 
+                // Append the submit button to the form
+                form.appendChild(s);
+				
+				// Append the login box to the form
+				log_box.appendchild(form);
+				
+				
+				
+                document.getElementsByTagName("body").appendChild(log_box);
+            
+	}
+				
+		
+           </script>
+
+</head>
+
+<body onload="loadform()">
+
+
+    
+</body>
+</html>
+
